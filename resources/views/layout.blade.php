@@ -6,7 +6,8 @@
     <title>Project Flyer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/app.css" />
-    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/libs.css" />
+    <script src="/js/app.js"></script>
 </head>
 <body>
 
@@ -19,7 +20,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project Flyer</a>
+            <a class="navbar-brand" href="/">Project Flyer</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -30,12 +31,15 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-    
+
     <div class="container">
-    
+
         @yield('content')
-    
+
     </div>
+
+    <script src="/js/libs.js"></script>
+    @include('flash')
 
 </body>
 </html>
